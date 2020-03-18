@@ -10,14 +10,14 @@ class Property {
 }
 
 class Shape {
-  String name;
+  String shapename;
   Property property;
 
-  Shape({this.name, this.property});
+  Shape({this.shapename, this.property});
 
   factory Shape.fromJson(Map<String, dynamic> json) {
     return Shape(
-      name: json["shape_name"],
+      shapename: json["shapename"],
       property: Property.fromJson(json["property"]),
     );
   }

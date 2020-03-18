@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_json/services/address_services.dart';
+import 'package:flutter_json/services/photo_services.dart';
 import 'package:flutter_json/services/product_services.dart';
-import 'package:flutter_json/services/shapre_services.dart';
+import 'package:flutter_json/services/shape_services.dart';
 import 'package:flutter_json/services/student_services.dart';
 
 void main() => runApp(MyApp());
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
     loadAddress();
     loadShape();
     loadProduct();
+    loadPhoto();
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(

@@ -1,13 +1,12 @@
 class Address {
-  final String city;
-  final List<String> streets;
+  String city;
+  List<String> streets;
 
   Address({this.city, this.streets});
 
   factory Address.fromJson(Map<String, dynamic> json) {
     final streetsFromJson = json["streets"];
-    List<String> streetsList = List.from(streetsFromJson);
-
+    List streetsList = List<String>.from(streetsFromJson);
     return Address(city: json["city"], streets: streetsList);
   }
 }

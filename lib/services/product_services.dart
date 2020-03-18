@@ -1,6 +1,7 @@
-import "package:flutter/services.dart";
-import 'package:flutter_json/models/product_model.dart';
-import "dart:convert";
+import 'dart:convert';
+
+import 'package:flutter/services.dart';
+import 'package:flutter_json/models/product_models.dart';
 
 Future<String> _loadAssetsProduct() async {
   return await rootBundle.loadString("assets/product.json");
